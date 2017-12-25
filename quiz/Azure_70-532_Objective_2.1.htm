@@ -1,0 +1,76 @@
+<section class="quiz" data-title="Create and manage Azure Resource Manager Virtual Machines" data-subtitle="Deploy workloads on Azure Resource Manager (ARM) Virtual Machines (VMs)">
+    <section class="question">
+        <section class="text">
+            Azure Virtual Machines only support VM's running Microsoft Windows operating system.
+        </section>
+        <section class="answer">True</section>
+        <section class="answer" data-correct>False</section>
+        <section class="description">
+            False, Azure Virtual Machines supports VM's running either Windows or Linux operating system.
+        </section>
+    </section>
+    <section class="question">
+        <section class="text">
+            When configuring a Virtual Machine to use a Virtual Network, when do the Virtual Network need to be specifed?
+        </section>
+        <section class="answer">Any time after the Virtual Machine has been created</section>
+        <section class="answer" data-correct>At the time the Virtual Machine is created</section>
+        <section class="answer">All of the above</section>
+        <section class="description">
+            Source: <a href="http://azure.microsoft.com/en-us/documentation/articles/virtual-machines-windows-create-custom/">http://azure.microsoft.com/en-us/documentation/articles/virtual-machines-windows-create-custom/</a>
+        </section>
+    </section>
+    <section class="question">
+        <section class="text">
+            What does the VM Agent provide?
+        </section>
+        <section class="answer">Server resource management monitoring</section>
+        <section class="answer">Automatic installation of Windows Updates</section>
+        <section class="answer" data-correct>Environment for extensions to be installed</section>
+        <section class="description">
+            The VM Agent provides an environment for extensions to be installed that can help with interacting or managing the virtual machine.<br/>
+            <br/>
+            Source: <a href="http://azure.microsoft.com/en-us/documentation/articles/virtual-machines-windows-create-custom/">http://azure.microsoft.com/en-us/documentation/articles/virtual-machines-windows-create-custom/</a>
+        </section>
+    </section>
+    <!--
+        - Identify workloads that can and cannot be deployed
+        - run workloads including Microsoft and Linux
+        - create VM's
+        - - create Linux VM
+        - - Create SQL Server VM
+    -->
+
+    <section class="question">
+        <section class="text">
+            Azure supports both .vhd and .vhdx file formats for Virtual Machines.
+        </section>
+        <section class="answer">True</section>
+        <section class="answer" data-correct>False</section>
+        <section class="description">
+            The .vhdx file format is not supported, only .vhd is supported by Azure.<br/>
+            <br/>
+            Source: <a href="http://azure.microsoft.com/en-us/documentation/articles/virtual-machines-create-upload-vhd-windows-server/">http://azure.microsoft.com/en-us/documentation/articles/virtual-machines-create-upload-vhd-windows-server/</a>
+        </section>
+    </section>
+    <section class="question">
+        <section class="text">
+            Which Windows Server versions are supported as Azure Virtual Machines withour requiring an extra CSA?
+        </section>
+        <section class="answer">Windows Server 2003</section>
+        <section class="answer">Windows Server 2008</section>
+        <section class="answer" data-correct>Windows Server 2008 R2</section>
+        <section class="answer" data-correct>Windows Server 2012</section>
+        <section class="answer" data-correct>Windows Server 2012 R2</section>
+        <section class="description">
+            Source: <a href="http://azure.microsoft.com/en-us/documentation/articles/virtual-machines-create-upload-vhd-windows-server/">http://azure.microsoft.com/en-us/documentation/articles/virtual-machines-create-upload-vhd-windows-server/</a>
+        </section>
+    </section>
+    
+    <!--
+        - Create specialized and reusable images
+        - prepare images using SysPrep and Windows Agent (Linux)
+        - copy images between storage accounts and subscriptions
+        - upload VMs
+    -->
+</section>

@@ -1,0 +1,368 @@
+﻿<!--
+// Azure-70-532-Practice-Test  http://github.com/crpietschmann/Azure-70-532-Practice-Test
+// Copyright (c) 2015 Chris Pietschmann http://pietschsoft.com
+// Licensed under MIT License https://github.com/crpietschmann/Azure-70-532-Practice-Test/blob/master/LICENSE
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Developing Microsoft Azure Solutions (70-532) Practice Test</title>
+
+    <link rel="stylesheet" type="text/css" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/jsQuizEngine.css">
+    <link rel="stylesheet" type="text/css" href="css/site.css">
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.2.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/knockout/knockout-2.2.1.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.4/bootstrap.min.js"></script>
+    <script src="js/jsQuizEngine.js"></script>
+    <script>
+        var quizEngine = null;
+        $(function () {
+            var selectedQuiz = location.href;
+			
+			if (selectedQuiz.indexOf('?') > -1) {
+			    selectedQuiz = selectedQuiz.substr(selectedQuiz.indexOf('?') + 1);
+				if (selectedQuiz.indexOf('#') > -1) {
+					selectedQuiz = selectedQuiz.substr(0, selectedQuiz.indexOf('#'));
+				}
+			} else {
+				selectedQuiz = null;
+			}
+
+			if (selectedQuiz !== null) {
+			    // fix referrals from Twitter and other services
+			    if (isNaN(+selectedQuiz.substr(0, 1))) {
+			        document.location = '?';
+			    }
+			}
+
+			if (selectedQuiz) {
+			    $('#titleScreen').hide();
+			    $('#jsQuizEngine').show();
+			    quizEngine = jsQuizEngine($('#jsQuizEngine'), { quizUrl: 'quiz/Azure_70-532_Objective_' + selectedQuiz + '.htm' });
+			} else {
+			    $('#titleScreen').show();
+			    $('#jsQuizEngine, #navbar-intest').hide();
+			}
+        });
+    </script>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="?">Developing Azure Solutions (70-532) Practice Test</a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul id="navbar-intest" class="nav navbar-nav">
+                    <li><a href="#" onclick="location.reload()">Reset Test</a></li>
+                    <li><a href="?">Back to Objectives</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right social-nav">
+                    <li>
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://crpietschmann.github.io/Azure-70-532-Practice-Test/" data-via="crpietschmann">Tweet</a>
+                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="container">
+
+        <div id="titleScreen">
+            <div class="jumbotron">
+                <h1>Developing Microsoft Azure Solutions (70-532) Practice Test</h1>
+                <p>
+                    This is a set of practice tests designed to provide assistance when studying for the Microsoft certification <a href="https://www.microsoft.com/learning/en-us/exam-70-532.aspx">Developing Microsoft Azure Solutions (70-532)</a> exam.
+                </p>
+            </div>
+
+            <div class="alert alert-info" role="alert"><strong>Update in Progress!</strong> The practice test questions are currently being updated for the latest exam objectives update. As a result, many of the practice questions were removed that didn't apply to the new exam objective changes. You can use the questions that do remain here to help you study, and hopefully I'll get new questions added soon for areas that aren't covered yet. Thanks! -- Chris Pietschmann</div>
+
+            <h2>Choose practice test to take:</h2>
+            <div id="objaccordian" class="panel-group" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingObj2">
+                        <h4 class="panel-title">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseObj2" aria-expanded="false" aria-controls="collapseObj2">
+                                Create and manage Azure Resource Manager Virtual Machines (30-35%)
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseObj2" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingObj2">
+                        <div class="panel-body">
+                            <p>
+                                <a href="?2.1">Deploy workloads on Azure Resource Manager (ARM) Virtual Machines (VMs)</a><br />
+                                Identify workloads that can and cannot be deployed; run workloads, including Microsoft and Linux; create VMs
+                            </p>
+                            <p>
+                                Perform configuration management<br />
+                                Automate configuration management by using PowerShell Desired State Configuration and VM Agent (custom script extensions); configure VMs using a configuration management tool, such as Puppet or Chef; enable remote debugging
+                            </p>
+                            <p>
+                                Configure ARM VM networking<br/>
+                                Configure static IP addresses, Network Security Groups (NSG), DNS, User Defined Routes (UDRs), external and internal load balancing with HTTP and TCP health probes, public IPs, firewall rules, and direct server return; design and implement Application Gateway
+                            </p>
+                            <p>
+                                Configure VM networking<br/>
+                                Configure reserved IP addresses, Network Security Groups (NSG), DNS at the virtual network level, load balancing endpoints, HTTP and TCP health probes, public IPs, firewall rules, direct server return, and keep-alive
+                            </p>
+                            <p>
+                                Scale ARM VMs<br/>
+                                Scale up and scale down VM sizes, deploy ARM VM Scale Sets (VMSS), configure ARM VMSS auto-scale
+                            </p>
+                            <p>
+                                Design and implement ARM VM storage<br/>
+                                Configure disk caching, plan for storage capacity, configure shared storage using Azure File service, configure geo-replication, implement ARM VMs with Standard and Premium Storage
+                            </p>
+                            <p>
+                                Monitor ARM VMs<br/>
+                                Configure ARM VM monitoring, configure alerts, configure diagnostic and monitoring storage location
+                            </p>
+                            <p>
+                                Manage ARM VM availability</br>
+                                Configure multiple ARM VMs in an availability set for redundancy, configure each application tier into separate availability sets, combine the Load Balancer with availability sets
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingObj4">
+                        <h4 class="panel-title">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseObj4" aria-expanded="false" aria-controls="collapseObj4">
+                                Design and implement a storage and data strategy (25-30%)
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseObj4" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingObj4">
+                        <div class="panel-body">
+                            <p>
+                                <a href="?4.1">Implement Azure Storage Blobs and Azure Files</a><br />
+                                Read data, change data, set metadata on a container, store data using block and page blobs, stream data using blobs, access blobs securely, implement async blob copy, configure Content Delivery Network (CDN), design blob hierarchies, configure custom domains, scale blob storage
+                            </p>
+                            <p>
+                                <a href="?4.2">Implement Azure storage tables and queues</a><br />
+                                Implement CRUD with and without transactions, design and manage partitions, query using OData, scale tables and partitions, add and process messages, retrieve a batch of messages, scale queues
+                            </p>
+                            <p>
+                                Manage access and monitor storage<br/>
+                                Generate shared access signatures, including client renewal and data validation; create stored access policies; regenerate storage account keys; configure and use Cross-Origin Resource Sharing (CORS); set retention policies and logging levels; analyze logs
+                            </p>
+                            <p>
+                                Implement Azure SQL Databases<br/>
+                                Choose the appropriate database tier and performance level, configure and perform point-in-time recovery, enable geo-replication, import and export data and schema, scale Azure SQL databases
+                            </p>
+                            <p>
+                                Implement Azure DocumentDB<br/>
+                                Create databases and collections, query documents, run DocumentDB queries
+                            </p>
+                            <p>
+                                Implement Redis caching<br/>
+                                Choose a cache tier, implement data persistence, implement security and network isolation, tune cluster performance
+                            </p>
+                            <p>
+                                Implement Azure Search<br/>
+                                Create a service index, add data, search an index, handle search results
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingObj1">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseObj1" aria-expanded="true" aria-controls="collapseObj1">
+                                Manage identity, application, and network services (15-20%)
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseObj1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingObj1">
+                        <div class="panel-body">
+                            <p>
+                                Integrate an app with Azure Active Directory (Azure AD)</br>
+                                Develop apps that use WS-federation, OAuth, and SAML-P endpoints; query the directory using Graph API
+                            </p>
+                            <p>
+                                Design and implement a communication strategy</br>
+                                Implement hybrid connections to access data sources on-premises, leverage site-to-site (S2S) VPN and ExpressRoute to connect to an on-premises infrastructure
+                            </p>
+                            <p>
+                                Design and implement a messaging strategy</br>
+                                Develop and scale messaging solutions using service bus queues, topics, relays, and notification hubs; monitor service bus queues, topics, relays, event hubs, and notification hubs
+                            </p>
+                            <p>
+                                Develop apps that use Azure AD B2C and Azure AD B2B</br>
+                                Design and implement .NET MVC, Web API, and Windows desktop apps that leverage social identity provider authentication, including Microsoft account, Facebook, Google+, Amazon, and LinkedIn; leverage Azure AD B2B to design and implement applications that support partner-managed identities
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingObj1">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseObj1" aria-expanded="true" aria-controls="collapseObj1">
+                                Design and implement Azure PaaS compute and web and mobile services (25-30%)
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseObj1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingObj1">
+                        <div class="panel-body">
+                            <p>
+                                <a href="?1.1">Deploy Azure App Service Web Apps</a><br />
+                                Define and manage App Service plans; configure Web Apps settings, certificates, and custom domains; manage Web Apps by using the API, Azure PowerShell, and Xplat-CLI; implement diagnostics, monitoring, and analytics; implement web jobs; design and configure Web Apps for scale and resilience
+                            </p>
+                            <p>
+                                Implement Azure Functions<br />
+                                Create Azure Functions, implement a webhook function, create an event processing function, implement an Azure-connected function
+                            </p>
+                            <p>
+                                Implement API Management<br/>
+                                Create managed APIs, configure API management policies, protect APIs with rate limits, add caching to improve performance, monitor APIs, customize the Developer Portal
+                            </p>
+                            <p>
+                                Design Azure App Service API Apps<br/>
+                                Create and deploy API Apps, automate API discovery by using Swashbuckle, use Swagger API metadata to generate client code for an API app, monitor API Apps
+                            </p>
+                            <p>
+                                Develop Azure App Service Logic Apps<br/>
+                                Create a Logic App connecting SaaS services, create a Logic App with B2B capabilities, create a Logic App with XML capabilities, trigger a Logic App from another app, create custom and long-running actions, monitor Logic Apps
+                            </p>
+                            <p>
+                                Develop Azure App Service Mobile Apps<br/>
+                                Create a Mobile App, add offline sync to a Mobile App, add authentication to a Mobile App, add push notifications to a Mobile App
+                            </p>
+                            <p>
+                                <a href="?1.3">Configure diagnostics, monitoring, and analytics</a><br />
+                                Retrieve diagnostics data, view streaming logs; configure endpoint monitoring; configure alerts; configure diagnostics; use remote debugging; monitor Web App resources
+                            </p>
+                            <p>
+                                Design and implement Azure Service Fabric apps<br/>
+                                Create a Service Fabric application; build an Actors-based service; add a web front end to a Service Fabric application; monitor and diagnose services; migrate apps from cloud services; create, secure, upgrade, and scale Service Fabric Cluster in Azure; scale a Service Fabric app
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <p><small><em>Note: In an effort to allow you to target your studies to specific exam objectives, the practice tests are broken out into each sub-objective having it's own individual practice test.</em></small></p>
+
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <div class="caption">
+                            <h3>Free Video Training</h3>
+                            <p>Microsoft Virtual Academy is an excellent source of Free video training on Microsoft Azure.</p>
+                            <p><a href="http://www.microsoftvirtualacademy.com/product-training/microsoft-azure" target="_blank" role="button" class="btn btn-primary">Watch Videos</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <div class="caption">
+                            <h3>Books</h3>
+                            <p>Microsoft Virtual Academy and Microsoft Press have a bunch of Free eBooks and paid books available.</p>
+                            <p><a href="http://books.buildazure.com" target="_blank" role="button" class="btn btn-primary">Find eBooks</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <div class="caption">
+                            <h3>Azure Documentation</h3>
+                            <p>The Microsoft Azure Documenation contains tons of articles covering everything.</p>
+                            <p><a href="https://docs.microsoft.com/azure" target="_blank" role="button" class="btn btn-primary">Read Documentation</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <div class="caption">
+                            <h3>Are you ready to get Certified?</h3>
+                            <p>If you've mastered the objectives, then you might be ready for the real thing.</p>
+                            <p><a href="https://www.microsoft.com/en-us/learning/exam-70-532.aspx" target="_blank" role="button" class="btn btn-primary">Schedule Exam</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <div class="caption">
+                            <h3>Free 1-month Azure Trial</h3>
+                            <p>Sign up for Free and get $200 to spend on all Azure services</p>
+                            <p><a href="http://azure.microsoft.com/en-us/pricing/free-trial/" target="_blank" role="button" class="btn btn-primary">Start Trial</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <div class="caption">
+                            <h3>Want to help write questions?</h3>
+                            <p>If you want to contribute to this project, please submit a Pull Request.</p>
+                            <a href="https://github.com/crpietschmann/Azure-70-532-Practice-Test" target="_blank"><img src="images/github-logo.png" style="float: right; width: 2em;" /></a>
+                            <p><a href="https://github.com/crpietschmann/Azure-70-532-Practice-Test/pulls" target="_blank" role="button" class="btn btn-primary">Submit Pull Request</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+
+        <div id="jsQuizEngine">
+            <section id="title" data-bind="visible: !quizStarted()">
+                <div class="jumbotron">
+                    <h1 data-bind="text: quizTitle"></h1>
+                    <h2 data-bind="text: quizSubTitle"></h2>
+                    <p><button class="btn btn-primary btn-lg" data-bind="click: startQuiz">Start Practice Test</button></p>
+                </div>
+            </section>
+            <section class="quiz" data-bind="visible: quizStarted() && !quizComplete()">
+                <h5 data-bind="text: quizTitle"></h5>
+                <h3 data-bind="text: quizSubTitle"></h3>
+                <div>Question <span data-bind="text: currentQuestionIndex"></span> of <span data-bind="text: questionCount"></span></div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" data-bind="attr: { 'aria-valuenow': currentProgress }, style: { width: currentProgress() + '%' }"></div>
+                </div>
+                <div class="question-pool"></div>
+                <button class="btn btn-default" data-bind="click: movePreviousQuestion, disable: currentQuestionIsFirst">Previous</button>
+                <button class="btn btn-default" data-bind="click: showCurrentQuestionAnswer">Show Answer</button>
+                <button class="btn btn-primary" data-bind="click: moveNextQuestion, disable: currentQuestionIsLast, visible: !currentQuestionIsLast()">Next</button>
+                <button class="btn btn-primary" data-bind="click: calculateScore, visible: currentQuestionIsLast">Calculate Score</button>
+            </section>
+            <section class="score" data-bind="visible: quizComplete">
+                <h5 data-bind="text: quizTitle"></h5>
+                <h3 data-bind="text: quizSubTitle"></h3>
+                <p>Test Results:</p>
+                <div>Questions: <span data-bind="text: questionCount"></span></div>
+                <div>Date: <span data-bind="text: calculatedScoreDate"></span></div>
+                <div>Overall Score: <span data-bind="text: calculatedScore"></span>%</div>
+                <div>Correct Questions: <span data-bind="text: totalQuestionsCorrect"></span></div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" data-bind="attr: { 'aria-valuenow': calculatedScore }, style: { width: calculatedScore() + '%' }, css: { 'progress-bar-success': quizPassed, 'progress-bar-danger': !quizPassed() }"></div>
+                </div>
+                <div class="pass-indicator">
+                    <h1 data-bind="css: { 'text-success': quizPassed, 'text-danger': !quizPassed() }">
+                        <span data-bind="visible: quizPassed">PASS</span>
+                        <span data-bind="visible: !quizPassed()">FAIL</span>
+                    </h1>
+                </div>
+            </section>
+        </div>
+    </section>
+    <footer class="container">
+		<p>The full source code and questions for this project is available at: <a href="http://github.com/crpietschmann/Azure-70-532-Practice-Test">http://github.com/crpietschmann/Azure-70-532-Practice-Test</a></p>
+		<p>Powered by <a href="https://github.com/crpietschmann/jsQuizEngine">jsQuizEngine</a> and Created by <a href="http://buildazure.com">Chris Pietschmann</a></p>
+        <p><small>Disclaimer: This project is not affiliated with Microsoft. All trademarks for Microsoft, Azure, etc are owned by Microsoft or their respective party.</small></p>
+    </footer>
+</body>
+</html>
