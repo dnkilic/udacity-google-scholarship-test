@@ -39,7 +39,7 @@
 			if (selectedQuiz) {
 			    $('#titleScreen').hide();
 			    $('#jsQuizEngine').show();
-			    quizEngine = jsQuizEngine($('#jsQuizEngine'), { quizUrl: 'quiz/questions' + selectedQuiz + '.htm' });
+			    quizEngine = jsQuizEngine($('#jsQuizEngine'), { quizUrl: 'quiz/questions_' + selectedQuiz + '.htm' });
 			} else {
 			    $('#titleScreen').show();
 			    $('#jsQuizEngine, #navbar-intest').hide();
