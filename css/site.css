@@ -1,4 +1,4 @@
-﻿body {
+body {
 }
 
 .question-pool .question .description img {
@@ -21,7 +21,7 @@
 }
 
 #titleScreen > .jumbotron {
-    background: #00abec url(Hero.png) no-repeat;
+    background: #a5eaec  no-repeat;
 }
 
 #titleScreen > .jumbotron p {
