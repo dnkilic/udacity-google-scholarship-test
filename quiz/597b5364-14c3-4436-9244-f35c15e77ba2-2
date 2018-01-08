@@ -1,0 +1,301 @@
+<section class="quiz" data-title="Udacity Google Android Scholarship Phase 1 Exam" data-subtitle="by Dogan Kilic">
+    <section class="question">
+        <img style="width:auto; max-width:50%;height:auto;margin:0px auto;display:block" src="images/q1.png"/>
+        <section class="text">
+            All manifest files should contain which of the following tags?
+        </section>
+        <section class="answer" data-correct > &ltapplication&gt</section>
+        <section class="answer"> &ltpermission&gt </section>
+        <section class="answer"> &ltuses-configuration&gt </section>
+        <section class="answer"> &ltuses-feature&gt </section>
+        <section class="answer"> &ltcompatible-screens&gt </section>
+        <section class="description">
+            All manifest files should contain &ltapplication&gt tag. Please take more time with <a href="https://developer.android.com/guide/topics/manifest/manifest-element.html/">third party links</a> provided through course videos. 
+        </section>
+    </section>
+    <section class="question">
+        <section class="text">
+            Which of the following features is not provided by Android Studio?
+        </section>
+        <section class="answer"> Translations Editor </section>
+        <section class="answer"> Share on Github </section>
+        <section class="answer"> The Firebase Assistant </section>
+        <section class="answer"> Vector Asset Studio </section>
+        <section class="answer" data-correct> ER Diagram Creator for SQLite </section>
+        <section class="description">
+            In order to create ER Diagrams you should use external tools. Please take more time with <a href="https://developer.android.com/studio/features.html">third party links</a> provided through course videos. 
+        </section>
+    </section>
+    <section class="question">
+        <section class="text">
+            Complete the sentence "Once you publish your application, you ..."
+        </section>
+        <section class="answer">cannot change application icon</section>
+        <section class="answer">cannot change version code</section>
+        <section class="answer">cannot change version name</section>
+        <section class="answer" data-correct >cannot change package name</section>
+        <section class="answer">cannot change application name</section>
+        <section class="description">
+            Once you publish your application, you cannot change package name. Please take more time with <a href="https://developer.android.com/guide/topics/manifest/manifest-element.html/">third party links</a> provided through course videos. 
+        </section>
+    </section>
+    <section class="question">
+        <section class="text">
+            Which of the following is the latest stable Android SDK version?
+        </section>
+        <section class="answer">KitKat</section>
+        <section class="answer" data-correct>Oreo</section>
+        <section class="answer">Lollipop</section>
+        <section class="answer">Marshmallow</section>
+        <section class="answer">Nougat</section>
+        <section class="description">
+            Latest SDK version is Oreo. Please take more time with <a href="https://developer.android.com/about/dashboards/index.html#Platform">third party links</a> provided through course videos. 
+        </section>
+    </section>
+    <section class="question">
+        <section class="text">
+            Which of the following feature - sdk is not correct?
+        </section>
+        <section class="answer">Home screen widgets (Cupcake)</section>
+        <section class="answer">Multiple finger tracking (Froyo)</section>
+        <section class="answer" data-correct>Tablet (Nougat)</section>
+        <section class="answer">Pro Audio (Marshmallow)</section>
+        <section class="answer">Android TV, Auto, Wear (Lollipop)</section>
+        <section class="description">
+       		 Tablets supported with Honeycomb. Please take more time with course content.
+        </section>
+    </section>
+    <section class="question">
+        <section class="text">
+            Which of the following android device feature does also include by Emulators?
+        </section>
+        <section class="answer">Bluetooth</section>
+        <section class="answer" data-correct>Location</section>
+        <section class="answer">NFC</section>
+        <section class="answer">USB</section>
+        <section class="answer">SD card insert/eject</section>
+        <section class="description">
+            You can trigger fake Location with your emulator. Please take more time with <a href="https://developer.android.com/studio/run/emulator.html#runningapp">third party links</a> provided through course videos.       
+        </section>
+    </section>
+    <section class="question">
+        <section class="text">
+            Which of the following is not an adb command?
+        </section>
+        <section class="answer">adb install</section>
+        <section class="answer">adb uninstall</section>
+        <section class="answer">adb kill-server</section>
+        <section class="answer">adb devices</section>
+        <section class="answer" data-correct>adb find</section>
+         <section class="description">
+            There is no find command for adb. Please take more time with <a href="https://developer.android.com/studio/command-line/adb.html">third party links</a> provided through course videos.       
+        </section>
+    </section>
+    <section class="question">
+        <section class="text">
+            Android apps are collections of four different type app components. Which of the following is not an app component?
+        </section>
+        <section class="answer">Service</section>
+        <section class="answer">Activity</section>
+        <section class="answer" data-correct>Thread</section>
+        <section class="answer">Content Provider</section>
+        <section class="answer">Broadcast Receiver</section>
+         <section class="description">
+            Threads are not android app components.  Please take more time with course content.       
+        </section>
+    </section>
+    <section class="question">
+        <section class="text">
+            Referencing a style attribute allows you to customize the look of UI elements by styling them to match standard variations supplied by the current theme, instead of supplying a hard-coded value. Which of the following symboll we use to reference style resources?
+        </section>
+        <section class="answer">;</section>
+        <section class="answer">+</section>
+        <section class="answer" data-correct>?</section>
+        <section class="answer">-</section>
+        <section class="answer">/</section>
+         <section class="description">
+            Example <br>android:textColor="?android:textColorSecondary"</br>. Please take more time with <a href="https://developer.android.com/guide/topics/resources/accessing-resources.html">third party links</a> provided through course videos.       
+        </section>
+    </section>
+    <section class="question">
+        <section class="text">
+Which of the following view component should be used from support library?        </section>
+        <section class="answer">TextView</section>
+        <section class="answer">Button</section>
+        <section class="answer">RelativeLayout</section>
+        <section class="answer" data-correct>ConstraintLayout</section>
+        <section class="answer">ScrollView</section>
+         <section class="description">
+            ConstraintLayout is available as a support library that you can use on Android systems starting with API level 9 (Gingerbread). Please take more time with <a href="https://developer.android.com/reference/android/support/constraint/ConstraintLayout.html">third party links</a> provided through course videos.       
+        </section>
+    </section>
+  <section class="question">
+        <section class="text">
+Which of the following view group permits usage of overlapping view components?        </section>
+        <section class="answer">AbsoluteLayout</section>
+        <section class="answer">LinearLayout</section>
+        <section class="answer">RelativeLayout</section>
+        <section class="answer">ConstraintLayout</section>
+        <section class="answer" data-correct>FrameLayout</section>
+         <section class="description">
+            FrameLayout permits overlapping view components.  Please take more time with course content.       
+        </section>
+    </section>
+  <section class="question">
+        <section class="text">
+What is the meaning of + symboll here : <br>android:id="@+id/nameTextbox"</br>?        </section>
+        <section class="answer">sync gradle to download library dependencies</section>
+        <section class="answer">imply that id is unique</section>
+        <section class="answer" data-correct>create id if it does not exist</section>
+         <section class="description">
+The plus symbol, + , indicates that this is a new resource ID and the aapt tool will create a new resource integer in the R.java class, if it doesn't already exist. Please take more time with course content.</section>
+    </section>
+ <section class="question">
+        <section class="text">
+Which of the following view group deprecated?        </section>
+        <section class="answer" data-correct>AbsoluteLayout</section>
+        <section class="answer">LinearLayout</section>
+        <section class="answer">RelativeLayout</section>
+        <section class="answer">ConstraintLayout</section>
+        <section class="answer">FrameLayout</section>
+         <section class="description">
+            AbsoluteLayout is deprecated.  Please take more time with course content.       
+        </section>
+    </section>
+<section class="question">
+        <section class="text">Which of the following Log method should not use by most developers never ever?</section>
+        <section class="answer" >Log.i</section>
+        <section class="answer">Log.e</section>
+        <section class="answer" data-correct>Log.wtf</section>
+        <section class="answer">Log.w</section>
+        <section class="answer">Log.d</section>
+         <section class="description">
+            WTF for errors never should ever happen, most developer should not use it never ever.  Please take more time with course content.       
+        </section>
+    </section>
+<section class="question">
+        <section class="text">Which of the following directory not supported inside /res folder?</section>
+        <section class="answer">raw/</section>
+        <section class="answer">xml/</section>
+        <section class="answer" data-correct>debug/</section>
+        <section class="answer">drawable/</section>
+        <section class="answer">color/</section>
+         <section class="description">
+            There is no relation between debug folder and res folder.  Please take more time with https://developer.android.com/guide/topics/resources/providing-resources.html.       
+        </section>
+    </section>
+<section class="question">
+        <section class="text">Which of the following keyword is not related with menu?</section>
+        <section class="answer">showAsAction</section>
+        <section class="answer" data-correct>thread/</section>
+        <section class="answer">orderInCategory</section>
+        <section class="answer">ifRoom</section>
+         <section class="description">
+            Thread is not related with menu.  Please take more time with course content.       
+        </section>
+    </section>
+
+<section class="question">
+        <section class="text">Which of the following is not a URI method?</section>
+        <section class="answer">showAsAction</section>
+        <section class="answer" data-correct>thread/</section>
+        <section class="answer">orderInCategory</section>
+        <section class="answer">ifRoom</section>
+         <section class="description">
+            Thread is not related with menu.  Please take more time with course content.       
+        </section>
+    </section>
+
+  <section class="question">
+        <section class="text">Which of the following is not purpose of Android.net.Uri class?</section>
+        <section class="answer">to create urls with query parameters</section>
+        <section class="answer" data-correct>to create view components</section>
+        <section class="answer">to create file paths</section>
+         <section class="description">
+            Please take more time with course content.       
+        </section>
+    </section>
+ <section class="question">
+        <section class="text">Which of the following is not a networking library for Android?</section>
+        <section class="answer">Retrofit</section>
+        <section class="answer" data-correct>AFNetworking</section>
+        <section class="answer">OkHttp</section>
+       <section class="answer">Volley</section>
+     <section class="answer">HttpUrlConnection</section>
+         <section class="description">
+            AFNetworking is a library for iOS development. Please take more time with course content.       
+        </section>
+    </section>
+<section class="question">
+        <section class="text">Which SDK version requires developers to request for permission in runtime?</section>
+        <section class="answer" data-correct>Marshmallow</section>
+        <section class="answer">Jellybean</section>
+        <section class="answer">Lollipop</section>
+       <section class="answer">Nougat</section>
+     <section class="answer">Cupcake</section>
+         <section class="description">
+            Answer is Marshmallow. Please take more time with course content.       
+        </section>
+    </section>
+<section class="question">
+        <section class="text">Which SDK version dont have networkOnMainThreadException?</section>
+        <section class="answer">Marshmallow</section>
+        <section class="answer" data-correct>Gingerbread</section>
+        <section class="answer">Lollipop</section>
+       <section class="answer">Nougat</section>
+     <section class="answer">Oreo</section>
+         <section class="description">
+            Answer is Gingerbread. Please take more time with course content.       
+        </section>
+    </section>
+<section class="question">
+        <section class="text">AsyncTask allows you to run a task in background thread , while publishing results to the UI thread. Which of the following method is running in background?</section>
+        <section class="answer" data-correct>doInBackground</section>
+        <section class="answer">onPostExecute</section>
+       <section class="answer">onPreExecute</section>
+     <section class="answer">onProgressUpdate</section>
+         <section class="description">
+            Answer is doInBackground. Please take more time with course content.       
+        </section>
+    </section>
+<section class="question">
+        <section class="text">AsyncTask allows you to run a task in background thread , while publishing results to the UI thread. Which of the following method help us to post parameters inside AsyncTask?</section>
+        <section class="answer">onPostExecute</section>
+       <section class="answer">onPreExecute</section>
+            <section class="answer" data-correct>execute</section>
+     <section class="answer">onProgressUpdate</section>
+         <section class="description">
+            Answer is execute. Please take more time with course content.       
+        </section>
+    </section>
+<section class="question">
+        <section class="text">Which of the following layout manager is not for RecycleView?</section>
+        <section class="answer">LinearLayoutManager</section>
+       <section class="answer">GridLayoutManager</section>
+            <section class="answer" data-correct>StaggeredLinearLayoutManager</section>
+     <section class="answer">StaggeredGridLayoutManager</section>
+         <section class="description">
+            There is nothing like StaggeredLinearLayoutManager. Please take more time with course content.       
+        </section>
+    </section>
+<section class="question">
+        <section class="text">Which of the following is not a feature of InstantRun?</section>
+        <section class="answer">Build and deploy only the incremental changes.</section>
+       <section class="answer">Don’t reinstall the app.</section>
+            <section class="answer">Don’t restart the Activity.</section>
+     <section class="answer">Don’t restart the app.</section>
+                <section class="answer" data-correct>Kill gradle.</section>
+         <section class="description">
+            Please take more time with https://medium.com/google-developers/instant-run-how-does-it-work-294a1633367f.       
+        </section>
+    </section>
+<section class="question">
+        <section class="text">Which of the following is true calculation of px?</section>
+        <section class="answer">px = dp * (dpi * 320)</section>
+       <section class="answer">px = dpi * (dp * 160)</section>
+        <section class="answer" data-correct>px = dp * (dpi * 160)</section>
+         <section class="description">
+            Please take more time with course content.       
+        </section>
+    </section>
+</section>
